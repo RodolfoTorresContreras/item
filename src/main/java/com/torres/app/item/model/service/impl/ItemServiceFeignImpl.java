@@ -4,13 +4,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.torres.app.item.clientes.ProductoClienteRest;
 import com.torres.app.item.model.Item;
 import com.torres.app.item.model.service.ItemService;
 
-@Service("feignClient")
+@Service
+@Primary
 public class ItemServiceFeignImpl implements ItemService {
 
 	@Autowired
