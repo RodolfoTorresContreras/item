@@ -12,4 +12,5 @@ public class Producto {
 	private String nombre;
 	private BigDecimal precio;
 	private Date createAt;
+	private Integer port;
 }
